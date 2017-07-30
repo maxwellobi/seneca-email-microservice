@@ -9,7 +9,7 @@ All messages to this service includes a session id. The seneca middleware checks
 
 The message for this service is defined as 
 
-```json
+```
     {
         sessionid: 'current_session_id',
         receiver_email: 'receiver@email.com',
