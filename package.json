@@ -1,0 +1,22 @@
+{
+  "name": "email-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "email-service",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./email.service",
+    "devstart": "nodemon ./email.service"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "debug": "^2.6.8",
+    "express": "^4.15.3",
+    "json-stringify-safe": "^5.0.1",
+    "redis": "^2.7.1",
+    "sendgrid": "^5.1.2",
+    "seneca": "^3.4.1"
+  }
+}
