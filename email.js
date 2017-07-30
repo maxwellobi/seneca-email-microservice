@@ -36,7 +36,9 @@ module.exports = function email(options){
 
                     //proceed to do the action cos session is found
                     debug(`Session data retrieved from redis: ${user}`);
-                    eval(eval(args.cmd)(args, reply));
+
+                    //seneca.prior(args, reply) //is not working
+                    eval(eval(args.cmd)(args, reply)); 
 
                 }else reply({ msg: 'Session not found ' + err }, null);
 
